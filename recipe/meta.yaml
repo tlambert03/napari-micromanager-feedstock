@@ -27,6 +27,7 @@ requirements:
     - scikit-image
     - tqdm
     - useq-schema >=0.1.0
+    - fonticon-materialdesignicons6
 
 test:
   imports:
