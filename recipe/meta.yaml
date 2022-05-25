@@ -1,5 +1,5 @@
 {% set name = "napari-micromanager" %}
-{% set version = "0.0.1rc5" %}
+{% set version = "0.0.1rc7" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/napari-micromanager-{{ version }}.tar.gz
-  sha256: 1e847a3cfaede45b958081c742722f3e57bde6b036994dd96b6241c73f654f34
+  sha256: 3bf7bfddc2863d5bfe7342825d053e54b1d652f3c87305709c886fab6346e57a
 
 build:
   noarch: python
@@ -20,12 +20,12 @@ requirements:
     - python >=3.8
     - setuptools-scm
   run:
-    - magicgui >=0.3.0
-    - napari
+    - fonticon-materialdesignicons6
+    - napari >=0.4.13
     - pymmcore-plus >=0.1.5
     - python >=3.8
-    - scikit-image
-    - tqdm
+    - superqt >=0.3.1
+    - tifffile
     - useq-schema >=0.1.0
 
 test:
