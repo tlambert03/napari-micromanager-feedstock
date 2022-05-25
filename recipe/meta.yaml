@@ -20,12 +20,12 @@ requirements:
     - python >=3.8
     - setuptools-scm
   run:
-    - magicgui >=0.3.0
-    - napari
+    - fonticon-materialdesignicons6
+    - napari >=0.4.13
     - pymmcore-plus >=0.1.5
     - python >=3.8
-    - scikit-image
-    - tqdm
+    - superqt >=0.3.1
+    - tifffile
     - useq-schema >=0.1.0
     - fonticon-materialdesignicons6
 
