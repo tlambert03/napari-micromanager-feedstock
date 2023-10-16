@@ -1,13 +1,13 @@
 {% set name = "napari-micromanager" %}
-{% set version = "0.0.1rc7" %}
+{% set version = "0.0.3" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/napari-micromanager-{{ version }}.tar.gz
-  sha256: 3bf7bfddc2863d5bfe7342825d053e54b1d652f3c87305709c886fab6346e57a
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: 960ef917bbe12bb3d6829ef2af0f1fc61b28f2c6c4f46bd456a7f7b66a7f6258
 
 build:
   noarch: python
