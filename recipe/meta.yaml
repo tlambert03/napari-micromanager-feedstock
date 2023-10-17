@@ -18,20 +18,22 @@ requirements:
   host:
     - pip
     - python >=3.8
-    - setuptools-scm
+    - hatchling
+    - hatch-vcs
   run:
     - fonticon-materialdesignicons6
     - napari >=0.4.13
-    - pymmcore-plus >=0.1.5
+    - pymmcore-plus >=0.8.0
     - python >=3.8
-    - superqt >=0.3.1
+    - pymmcore-widgets >=0.5.3
+    - superqt >=0.5.1
     - tifffile
-    - useq-schema >=0.1.0
-    - fonticon-materialdesignicons6
+    - useq-schema >=0.4.1
+    - zarr
 
 test:
   imports:
-    - micromanager_gui
+    - napari_micromanager
   commands:
     - pip list
     - pip check
@@ -39,7 +41,7 @@ test:
     - pip
 
 about:
-  home: https://github.com/tlambert03/napari-micromanager
+  home: https://github.com/pymmcore-plus/napari-micromanager
   summary: GUI interface between napari and micromanager
   license: BSD-3-Clause
   license_file: LICENSE
