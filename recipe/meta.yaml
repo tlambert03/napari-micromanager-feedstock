@@ -30,6 +30,8 @@ requirements:
     - tifffile
     - useq-schema >=0.4.1
     - zarr
+    - numpy
+    - qtpy
 
 test:
   imports:
